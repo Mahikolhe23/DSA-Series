@@ -24,7 +24,7 @@ public class Zoo {
 			System.out.println("Yes");
 		} else {
 			System.out.println("No");
-			in.close();
 		}
+		in.close();
 	}
 }

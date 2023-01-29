@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class GraphsUsingArray {
 	private int[] vertices;
 	private int[][] edges;
-	private int n;
+//	private int n;
 	Scanner in = new Scanner(System.in);
 
 	public static void main(String[] args) {

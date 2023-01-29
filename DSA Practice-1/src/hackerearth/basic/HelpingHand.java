@@ -21,6 +21,7 @@ public class HelpingHand {
 			System.out.println("valid");
 		} else {
 			System.out.println("invalid");
-		}in.close();
+		}
+		in.close();
 	}
 }

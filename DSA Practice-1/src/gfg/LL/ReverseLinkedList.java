@@ -5,7 +5,7 @@ public class ReverseLinkedList {
 	public static void main(String[] args) {
 
 	}
-
+	//using three pointer method reverse LL
 	Node reverseList(Node head) {
 		Node p = null;
 		Node c = head;

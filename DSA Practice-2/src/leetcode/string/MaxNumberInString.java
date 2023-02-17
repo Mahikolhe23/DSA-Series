@@ -1,4 +1,4 @@
-package com.leetcode.string;
+package leetcode.string;
 
 //https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 public class MaxNumberInString {

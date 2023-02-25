@@ -3,9 +3,6 @@ package tree;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Stack;
-
-import tree.PreorderTraverselBST.TreeNode;
 
 //https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
 public class AllElementInBST {
@@ -14,20 +11,19 @@ public class AllElementInBST {
 	}
 
 	public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
-		List<Integer> list = preorderTraversal(root1);
-		list.addAll(preorderTraversal(root2));
+		List<Integer> list = new ArrayList<Integer>();
+		preorderTraversal(root1, list);
+		preorderTraversal(root2, list);
 		Collections.sort(list);
 		return list;
 	}
 
-	public List<Integer> preorderTraversal(TreeNode root) {
-		List<Integer> list = new ArrayList<>();
+	public void preorderTraversal(TreeNode root, List<Integer> list) {
 		if (root == null)
-			return list;
+			return;
 		list.add(root.val);
-		preorderTraversal(root.left);
-		preorderTraversal(root.right);
-		return list;
+		preorderTraversal(root.left, list);
+		preorderTraversal(root.right, list);
 	}
 
 	public class TreeNode {

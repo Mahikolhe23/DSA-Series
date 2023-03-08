@@ -1,0 +1,141 @@
+Q1 - Find Factorial without recursion
+
+public static int fact(int n){
+int sum=1;
+   if(n<0){
+     sum=0;
+    }
+    else{
+       for(int i=1;i<=n;i++){
+	   sum=sum*i;	
+	}
+   }
+  return sum;
+}
+***********************************************
+
+Q2 - Find Factorial using Recursion
+public static int fact(int n){
+	if(n==1)
+	  return 1;
+	return n*fact(n-1);
+}
+
+***********************************************
+
+Q3 - Find(Print) Fibonacci Series till given number wihtout recursion
+public static void fib(int n){
+	int n1=0;
+	int n2=1;
+		System.Out.Println(n1,n2);
+	for(int i=2;i<=n;i++){
+		int n3=n1+n2;
+		System.Out.Println(n3);
+		n1=n2;
+		n2=n3;
+	}	
+}
+***********************************************
+Q4 - Fibonacci series using recurion
+public static void fib(int n){
+	if(n==0)
+		return 0;
+	if(n==1)
+		return 1;
+	return fib(n-1)+fib(n-2);
+}
+***********************************************
+Q5 - Armstrong number or not
+public static boolean armstrong(int n){
+	int temp=n;
+	int d=0;
+	while(temp>0){
+		temp/=10;
+		d++;
+	}
+	temp=n;
+	int sum=0;
+	while(temp>0){
+		int r=temp%10;
+		sum=sum+pow(r,d);
+		temp/=10;
+	}
+	return (sum==n);
+}
+
+public static int pow(int n , int p){
+	int sum=1;
+	while(p>0){
+		sum=sum*n;
+		p--;
+	}
+   return sum;	
+}
+***********************************************
+Q6 - Prime series
+public static void primeSeries(int n){
+	for(int i=2;i<n;i++){
+		boolean isPrime=true;
+		for(int j=2; j<i;j++){
+			if(i%j==0){
+			isPrime=false;
+			break;
+			}
+		}
+		if(isPrime)
+			System.out.println(i);
+	}
+}
+***********************************************
+Q7 - Print table series for given range
+public static void printTable(int start, int end){
+	for(int i=start;i<=end;i++){
+		for(int j=1;i<=10;j++){
+			System.out.println(i+" * "+j+" = "+i*j);
+		}
+	}
+}
+***********************************************
+Q8 - Number is Palindrome or not
+public static boolean palindrome(int n){
+	int temp=n;
+	int sum=0;
+	while(n>0){
+		int r=n%10;
+		sum=sum*10+r;
+		n/=10;
+	}
+  return (sum==temp);
+}
+***********************************************
+Q9 - String palindrome or not
+public static boolean palindrome(String s){
+	int start=0;
+	int end=s.length()-1;
+	while(star<=end){
+		if(s.charAt(start)!=s.charAt(end))	
+			return false;
+		start++;
+		end--;
+	}
+   return true;
+}
+***********************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,7 +36,7 @@ public static void fib(int n){
 	}	
 }
 ***********************************************
-Q4 - Fibonacci series using recurion
+Q4 - Fibonacci nth number using recurion
 public static void fib(int n){
 	if(n==0)
 		return 0;
@@ -121,13 +121,124 @@ public static boolean palindrome(String s){
    return true;
 }
 ***********************************************
+Q10 - Find given number is prime or not
+public static boolean isPrime(int n){
+	for(int n=2;i<n;i++){
+		if(n%i==0)
+			return false;
+	}
+  return true;
+}
+***********************************************
+Q11 - Find sum of prime Number till given number
+public static int primSum(int n){
+	int sum=0;
+	for(int i=1;i<n;i++){
+		if(isPrime(i)){
+			sum+=i;
+		}
+	}
+return sum;
+}
+public static boolean isPrime(int n){
+	for(int i=2;i<n;i++){
+		if(n%i==0)
+			return false;
+	}
+  return true;
+}
+***********************************************
+Q12 - Find given number is perfect number or not
+public static boolean isPerfect(int n){
+	int sum=1;
+	for(int i=2;i<=n/2;i++){
+		if(n%i==0){
+			sum+=i;
+		}
+	}
+    return sum==n;
+}
+***********************************************
+Q13 - Range of perfect number 
+public static void perfectRange(int n){
+	for(int i=1;i<=n;i++){
+		if(isPerfect(i))
+		System.out.println(i);
+	}
+  return sum;
+}
+public static boolean isPerfect(int n){
+	int sum=1;
+	for(int i=2;i<=n/2;i++){
+	if(n%i==0)
+		sum+=i;
+	}
+	return sum==n;
+}
+***********************************************
+Q14 - Factorial of given range number
+public static void factRange(int n){
+	for(int i=1;i<=n;i++){
+		System.out.prinln(fact(i));
+	}
+}
+public static int fact(int n){
+	if(n==1)
+		return 1;
+	return (n-1);
+}
+***********************************************
+Q15 - Strong number or not (sum of factorial of its digit== number)
+public static boolean isStrong(int n){
+	int sum=0;
+	int temp=n;
+	while(temp>0){
+		int r=temp%10;
+		sum+=fact(r);
+		temp/=10;
+	}
+   return n==sum;
+}
+public static int fact(int n){
+	if(n==1)
+		return 1;
+	return (n-1);
+}
+***********************************************
+Q16 - Find GCD of two given number
+public static int findGCD(int num1,int num2){
+	int  gcd=1;
+	for(int i=1;i<=num1&&i<=num2;i++){
+		if(x%i==0&&y%i==0)
+		gcd=i;
+	}
+	return gcd;
+}
+***********************************************
+Q17 - Prime Palindrome or not 
+public static boolean isPrimePalidrome(int n) {
+		if (isPrime(n)) {
+			int temp = n;
+			int sum = 0;
+			while (temp > 0) {
+				int r = temp % 10;
+				sum = sum * 10 + r;
+				temp /= 10;
+			}
+			return (sum == n);
+		}
+		return false;
+	}
 
-
-
-
-
-
-
+	public static boolean isPrime(int n) {
+		for (int i = 2; i < n; i++) {
+			if (n % i == 0)
+				return false;
+		}
+		return true;
+	}
+***********************************************
+Q18 - 
 
 
 

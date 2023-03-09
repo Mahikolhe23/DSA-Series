@@ -238,7 +238,61 @@ public static boolean isPrimePalidrome(int n) {
 		return true;
 	}
 ***********************************************
-Q18 - 
+Q18 - Binary To Decimal
+public static int binaryToDecimal(int b){
+	int sum=0;
+	int c=0;
+	while(b>0){
+		int r=b%10;
+		sum=sum+r*pow(2,c);
+		c++;
+		b/=10;
+	}
+  return sum;	
+}
+public static int pow(int n, int p){
+	int sum=1;
+	for(int i=1;i<=p;i++){
+		sum=sum*n;
+	}
+ return sum;
+}
+***********************************************
+Q19 Decimal to Binary
+public static String decimalToBinary(int d){
+	String bin="";
+	while(d>0){
+		int r=d%2;
+		bin=bin+r;
+		n/=2;
+	}
+}
+***********************************************
+Q20 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

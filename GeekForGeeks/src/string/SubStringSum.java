@@ -21,7 +21,6 @@ public class SubStringSum {
 				if (sum == s) {
 					l[0] = i - 1;
 					l[1] = j - 1;
-
 				}
 			}
 		}

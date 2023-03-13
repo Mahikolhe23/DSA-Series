@@ -1,5 +1,6 @@
 package array;
 
+//https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1?page=1&difficulty[]=0&sortBy=submissions
 public class EquilibriumPoint {
 
 	public static void main(String[] args) {

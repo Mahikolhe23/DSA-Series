@@ -18,7 +18,7 @@ public class CounterNumberOfNodes {
 		Node left;
 		Node right;
 
-		Node(int val) {
+		Node(int val){
 			this.val = val;
 			this.left = null;
 			this.right = null;

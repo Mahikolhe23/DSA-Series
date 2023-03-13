@@ -1,7 +1,9 @@
 package array;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
+//https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1?page=1&difficulty[]=0&sortBy=submissions
 public class LeaderInArray {
 
 	public static void main(String[] args) {
@@ -11,19 +13,17 @@ public class LeaderInArray {
 
 	static ArrayList<Integer> leaders(int arr[], int n) {
 		ArrayList<Integer> temp = new ArrayList<>();
-		int c = 0;
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[i] > arr[j]) {
-					c++;
-					System.out.print(c);
-				}
+		// last element is always leader
+		int c = arr[n - 1];
+		temp.add(c);
+		// iterate from second last element
+		for (int i = n - 2; i >= 0; i--) {
+			if (c <= arr[i]) {
+				c = arr[i];
+				temp.add(c);
 			}
-			if (c == (n - i))
-				temp.add(arr[i]);
 		}
-		temp.add(arr[arr.length - 1]);
-		System.out.println(temp);
+		Collections.reverse(temp);
 		return temp;
 	}
 }

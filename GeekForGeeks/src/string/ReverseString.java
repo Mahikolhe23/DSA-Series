@@ -1,5 +1,8 @@
 package string;
 
+import java.util.Arrays;
+
+//https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1?page=1&difficulty[]=0&category[]=Strings&sortBy=submissions
 public class ReverseString {
 
 	public static void main(String[] args) {
@@ -7,17 +10,13 @@ public class ReverseString {
 		reverseWords(s);
 	}
 
-	@SuppressWarnings("null")
-	public static String reverseWords(String S) {
-		String[] m = null;
-		for (int i = 0; i < S.length(); i++) {
-			m = S.split("");
+	public static String reverseWords(String s) {
+		String[] m = s.split(".");
+		String k = "";
+		System.out.println(Arrays.toString(m));
+		for (int i = 0; i < m.length; i++) {
+			k = k + m[i];
 		}
-		String[] k = null;
-		for (int i = 0, j = m.length - 1; i < m.length; i++, j--) {
-			k[i] = m[j];
-		}
-		System.out.println(k.toString());
-		return null;
+		return k;
 	}
 }

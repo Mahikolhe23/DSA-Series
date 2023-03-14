@@ -107,6 +107,58 @@ public class SLL {
 		System.out.print("END");
 	}
 
+	// get middle
+	public int middle() {
+		Node slow = head;
+		Node fast = head;
+		while (slow != null && fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		return slow.val;
+	}
+
+	// print alternate
+	public void alter() {
+		Node temp = head;
+		while (temp != null) {
+			System.out.print(temp.val + " -> ");
+			if (temp.next != null)
+				temp = temp.next.next;
+			else
+				temp = temp.next;
+		}
+	}
+
+	// reverse link list using three pointer
+	public void reverse(Node root) {
+		Node prev = null;
+		Node current = root;
+		Node next = null;
+		while (current != null) {
+			next = current.next;
+			current.next = prev;
+			prev = current;
+			current = next;
+		}
+		head = prev;
+	}
+
+	// reverse link list using recursion
+	public Node reverse2(Node root) {
+		if (root == null || root.next == null)
+			return root;
+		Node temp = reverse2(root.next);
+		root.next.next = root;
+		root.next = null;
+		head = temp;
+		return temp;
+	}
+
+	public Node getHead() {
+		return head;
+	}
+
 	// Node class
 	private class Node {
 		private int val;

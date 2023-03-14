@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 //https://leetcode.com/problems/remove-linked-list-elements/
 public class RemoveLLElement {

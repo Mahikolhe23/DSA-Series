@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 public class MergeSortedList {
 	ListNode head;

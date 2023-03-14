@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 //https://leetcode.com/problems/middle-of-the-linked-list/
 public class FindMiddleOfLinkList {

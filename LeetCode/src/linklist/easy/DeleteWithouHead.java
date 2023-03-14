@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 //https://leetcode.com/problems/delete-node-in-a-linked-list/description/
 public class DeleteWithouHead {

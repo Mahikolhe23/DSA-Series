@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 //https://leetcode.com/problems/add-two-numbers/
 public class AddTwoNumber {

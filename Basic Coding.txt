@@ -268,7 +268,18 @@ public static String decimalToBinary(int d){
 	}
 }
 ***********************************************
-Q20 - 
+Q20 - Remove duplicate from array
+public static void removeDuplicate(int[] arr){
+	int c=0;
+	int[] temp= new int[arr.length-1];
+	for(int i=1;i<arr.length;i++){
+		if(arr[i]!=arr[i-1]{
+			temp[c++]=arr[i];
+		}
+	}
+}
+***********************************************
+Q21 - 
 
 
 

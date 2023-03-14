@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 import java.util.Stack;
 

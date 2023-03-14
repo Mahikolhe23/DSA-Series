@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 //https://leetcode.com/problems/merge-nodes-in-between-zeros/
 public class MergeNodesInBetweenZeros {

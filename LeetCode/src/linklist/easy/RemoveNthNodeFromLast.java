@@ -1,4 +1,4 @@
-package linklist;
+package linklist.easy;
 
 //https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 public class RemoveNthNodeFromLast {

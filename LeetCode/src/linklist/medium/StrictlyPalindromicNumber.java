@@ -1,4 +1,4 @@
-package medium;
+package linklist.medium;
 
 //https://leetcode.com/problems/strictly-palindromic-number/
 public class StrictlyPalindromicNumber {

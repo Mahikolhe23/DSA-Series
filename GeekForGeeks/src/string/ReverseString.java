@@ -10,13 +10,13 @@ public class ReverseString {
 		reverseWords(s);
 	}
 
-	public static String reverseWords(String s) {
-		String[] m = s.split(".");
+	public static String reverseWords(String S) {
+		String[] m = S.split("[.']+");
 		String k = "";
 		System.out.println(Arrays.toString(m));
-		for (int i = 0; i < m.length; i++) {
-			k = k + m[i];
+		for (int i = m.length - 1; i > 0; i--) {
+			k += m[i] + ".";
 		}
-		return k;
+		return k + m[0];
 	}
 }

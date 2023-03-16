@@ -32,6 +32,7 @@ public class RemoveLoop {
 	}
 
 	public class Node {
+		@SuppressWarnings("unused")
 		private int val;
 		private Node next;
 

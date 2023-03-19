@@ -6,7 +6,8 @@ import java.util.ArrayList;
 public class ArrayListOperation {
 
 	public static void main(String[] args) {
-
+//		String m = "Mahi";
+//		m.substring(beginIndex, endIndex)
 	}
 
 	public static void insert(ArrayList<Character> clist, char c) {

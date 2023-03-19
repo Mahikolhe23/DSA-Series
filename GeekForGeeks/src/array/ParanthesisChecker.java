@@ -7,6 +7,7 @@ public class ParanthesisChecker {
 
 	public static void main(String[] args) {
 		String par = "{([])}";
+//		Character.isAlphabetic(codePoint)
 		System.out.println(ispar(par));
 	}
 

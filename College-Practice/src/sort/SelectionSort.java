@@ -37,7 +37,7 @@ public class SelectionSort {
 	public static int getMaxindex(int[] arr, int start, int end) {
 		int max = start;
 		for (int i = start; i <= end; i++) {
-			if (arr[start] < arr[i]) {
+			if (arr[max] < arr[i]) {
 				max = i;
 			}
 		}

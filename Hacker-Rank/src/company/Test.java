@@ -10,6 +10,8 @@ public class Test {
 		Thread t2 = new Thread(new TaskEvenOdd(print, MAX, true));
 		t1.start();
 		t2.start();
+//		StaticBlock st = new StaticBlock();
+
 	}
 
 }

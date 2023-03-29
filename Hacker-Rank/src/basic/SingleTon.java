@@ -3,8 +3,10 @@ package basic;
 public class SingleTon {
 
 	public static void main(String[] args) {
-		Single s = Single.getInstance();
-		System.out.println(s);
+//		Single s = Single.getInstance();
+//		System.out.println(s);
+//		StaticBlock st = new StaticBlock();
+//		st.method();
 	}
 }
 
@@ -12,7 +14,7 @@ class Single {
 	private static Single s;
 
 	private Single() {
-		System.out.println("Calling single");
+//		System.out.println("Calling single");
 	}
 
 	public static Single getInstance() {

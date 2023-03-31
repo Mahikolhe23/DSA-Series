@@ -1,5 +1,7 @@
 package linklist;
 
+import java.util.Arrays;
+
 public class SLL {
 	NodeClass head;
 
@@ -7,6 +9,11 @@ public class SLL {
 		NodeClass n = new NodeClass();
 		System.out.println(n.val + " " + n.b);
 		new SLL();
+		String temp = "Hello";
+		char[] arr = temp.toCharArray();
+		System.out.println(Arrays.toString(arr));
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
 	}
 
 	public SLL() {

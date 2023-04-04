@@ -1,4 +1,4 @@
-package company;
+package concept;
 
 public class ExceptionHandling {
 	static int val = 10;

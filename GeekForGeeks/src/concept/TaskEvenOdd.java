@@ -1,4 +1,4 @@
-package company;
+package concept;
 
 class TaskEvenOdd implements Runnable {
 

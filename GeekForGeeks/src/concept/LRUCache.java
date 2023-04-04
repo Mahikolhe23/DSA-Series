@@ -1,4 +1,4 @@
-package company;
+package concept;
 
 import java.util.HashMap;
 

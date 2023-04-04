@@ -1,5 +1,5 @@
-package array;
-
+package company;
+//cumulas hitachi
 public class PrintElementOf2DArray {
 
 	public static void main(String[] args) {

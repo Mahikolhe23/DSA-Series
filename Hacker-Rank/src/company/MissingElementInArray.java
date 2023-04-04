@@ -1,7 +1,7 @@
-package array;
+package company;
 
 import java.util.Arrays;
-
+//cumulas hitachi
 public class MissingElementInArray {
 
 	public static void main(String[] args) {

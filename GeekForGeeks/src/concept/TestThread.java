@@ -1,6 +1,6 @@
-package company;
+package concept;
 
-public class Test {
+public class TestThread {
 
 	static int MAX = 5;
 

@@ -12,9 +12,7 @@ public class KeyboardRow {
 
 	@SuppressWarnings("unused")
 	public static String[] findWords(String[] words) {
-		@SuppressWarnings("unused")
 		String s1 = "qwertyuiop";
-		@SuppressWarnings("unused")
 		String s2 = "asdfghjkl";
 		String s3 = "zxcvbnm";
 		for (int i = 0; i < words.length; i++) {

@@ -1,4 +1,4 @@
-package day3.basic_java;
+package day3.conditional_loops_basic;
 
 import java.util.Scanner;
 

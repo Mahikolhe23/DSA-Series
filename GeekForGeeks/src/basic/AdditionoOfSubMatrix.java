@@ -4,7 +4,7 @@ public class AdditionoOfSubMatrix {
 
 	public static void main(String[] args) {
 		int Arr[][] = { { 1, 2, 3, 4, 5, 6 }, { 7, 8, 9, 10, 11, 12 }, { 13, 14, 15, 16, 17, 18 },
-				{ 19, 20, 21, 22, 23, 24 }, { 25, 26, 27, 28, 29, 30 } };
+				{ 19, 20, 21, 22, 23, 24 }, { 25, 26, 27, 28, 29, 3 } };
 		int X1 = 3, Y1 = 4, X2 = 4, Y2 = 5;
 		System.out.println(subMatrixSum(Arr, X1, Y1, X2, Y2));
 	}

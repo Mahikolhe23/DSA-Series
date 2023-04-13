@@ -10,7 +10,7 @@ public class P2_ElectricityBill {
 		int rate = in.nextInt();
 		System.out.println("Enter the Consumeption");
 		int consume = in.nextInt();
-		System.out.println("Electric Bill = " + electricity(rate, consume));
+		System.out.println("Electric Bill sum = " + electricity(rate, consume));
 		in.close();
 	}
 

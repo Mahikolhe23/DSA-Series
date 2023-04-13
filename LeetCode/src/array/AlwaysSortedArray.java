@@ -9,7 +9,7 @@ public class AlwaysSortedArray {
 		Scanner scanner = new Scanner(System.in);
 		int i, n, num, pos = 0;
 		int arr[] = new int[100];
-		System.out.println("Enter the size of array : ");
+		System.out.println("Enter the size of array = : ");
 		n = scanner.nextInt();
 		System.out.println("Enter the elements of the array : ");
 		for (i = 0; i < n; i++) {

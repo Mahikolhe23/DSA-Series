@@ -9,8 +9,8 @@ public class StaticBlock {
 	}
 
 	public static void main(String[] args) {
-		StaticBlock s = new StaticBlock();
-		s.method();
+//		StaticBlock s = new StaticBlock();
+//		s.method();
 	}
 
 	public StaticBlock() {
